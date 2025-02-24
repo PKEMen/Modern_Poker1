@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/splashScreenFragment">
+    <fragment
+        android:id="@+id/splashScreenFragment"
+        android:name="com.example.modern_poker1.SplashScreenFragment"
+        android:label="fragment_splash_screen"
+        tools:layout="@layout/fragment_splash_screen" >
+        <action
+            android:id="@+id/action_splashScreenFragment_to_login_page3"
+            app:destination="@id/login_page3" />
+    </fragment>
+    <fragment
+        android:id="@+id/login_page3"
+        android:name="com.example.modern_poker1.Login_page"
+        android:label="Login_page" >
+        <action
+            android:id="@+id/action_login_page3_to_avatarScreenFragment"
+            app:destination="@id/avatarScreenFragment" />
+        <action
+            android:id="@+id/action_login_page3_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/avatarScreenFragment"
+        android:name="com.example.modern_poker1.AvatarScreenFragment"
+        android:label="fragment_avatar_screen"
+        tools:layout="@layout/fragment_avatar_screen" >
+        <action
+            android:id="@+id/action_avatarScreenFragment_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        android:name="com.example.modern_poker1.MainScreenFragment"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/action_mainScreenFragment_to_settings"
+            app:destination="@id/settings" />
+    </fragment>
+    <fragment
+        android:id="@+id/settings"
+        android:name="com.example.modern_poker1.Settings"
+        android:label="fragment_settings"
+        tools:layout="@layout/fragment_settings" >
+        <action
+            android:id="@+id/action_settings_to_login_page3"
+            app:destination="@id/login_page3" />
+    </fragment>
+</navigation>
