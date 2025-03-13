@@ -16,13 +16,16 @@
     <fragment
         android:id="@+id/login_page3"
         android:name="com.example.modern_poker1.Login_page"
-        android:label="Login_page" >
+        android:label="Login_page">
         <action
             android:id="@+id/action_login_page3_to_avatarScreenFragment"
             app:destination="@id/avatarScreenFragment" />
         <action
             android:id="@+id/action_login_page3_to_mainScreenFragment"
             app:destination="@id/mainScreenFragment" />
+        <action
+            android:id="@+id/action_login_page3_to_signUpFragment"
+            app:destination="@id/signUpFragment" />
     </fragment>
     <fragment
         android:id="@+id/avatarScreenFragment"
@@ -50,5 +53,22 @@
         <action
             android:id="@+id/action_settings_to_login_page3"
             app:destination="@id/login_page3" />
+        <action
+            android:id="@+id/action_settings_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment" />
+        <action
+            android:id="@+id/action_settings_to_avatarScreenFragment"
+            app:destination="@id/avatarScreenFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/signUpFragment"
+        android:name="com.example.modern_poker1.SignUpFragment"
+        android:label="SignUpFragment" >
+        <action
+            android:id="@+id/action_signUpFragment_to_login_page3"
+            app:destination="@id/login_page3" />
+        <action
+            android:id="@+id/action_signUpFragment_to_avatarScreenFragment"
+            app:destination="@id/avatarScreenFragment" />
     </fragment>
 </navigation>

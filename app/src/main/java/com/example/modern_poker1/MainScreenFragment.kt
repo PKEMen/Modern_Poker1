@@ -29,7 +29,7 @@ class MainScreenFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val avatarIcon: ImageView = view.findViewById(R.id.avatar_icon)
+        val avatarIcon: ImageView = view.findViewById(R.id.settingIcon)
         avatarIcon.setOnClickListener {
             findNavController().navigate(R.id.action_mainScreenFragment_to_settings)
         }
