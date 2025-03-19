@@ -3,8 +3,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical"
-    android:background="@color/pokergreen">
+    android:background="@color/pokergreen"
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -14,217 +14,365 @@
             android:id="@+id/continueSelect"
             android:layout_width="80dp"
             android:layout_height="35dp"
-            android:background="@drawable/round_back_notification"
-            android:text="Continue"
-            android:textSize="10sp"
             android:layout_alignParentEnd="true"
-            android:layout_marginEnd="10dp"
             android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/round_back_notification"
+            android:gravity="center"
             android:padding="5dp"
-            android:gravity="center"/>
+            android:text="Continue"
+            android:textSize="10sp" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Avatar"
             android:layout_centerInParent="true"
+            android:text="Avatar"
             android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="25sp" />
+            android:textSize="25sp"
+            android:textStyle="bold" />
     </RelativeLayout>
 
-
-    <LinearLayout
-        android:background="@drawable/round_back_white10_20"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="40dp"
-        android:orientation="vertical"
-        android:padding="15dp">
+        android:layout_height="wrap_content">
 
-        <TextView
-            android:layout_width="wrap_content"
+        <LinearLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Choose Gender"
-            android:layout_gravity="center"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="18sp" />
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:src="@drawable/man_user_circle_icon" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:text="Preview"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_back_white10_20"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Choose Gender"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/male_selct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/round_back_secondary_100"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="19dp"
+                        android:text="Male"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pokergreen"
+                        android:textSize="15sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="130dp"
+
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/male_selct"
+                        android:background="@drawable/round_back_secondary_100"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="19dp"
+                        android:text="Female"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pokergreen"
+                        android:textSize="15sp" />
+
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_back_white10_20"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Choose Shirt Color"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/green_selct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/round_back_secondary_100"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="19dp"
+                        android:text="Green"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pokergreen"
+                        android:textSize="15sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/blue_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/green_selct"
+                        android:background="@drawable/round_back_secondary_100"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="19dp"
+                        android:text="Blue"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pokergreen"
+                        android:textSize="15sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/blue_select"
+                        android:background="@drawable/round_back_secondary_100"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="19dp"
+                        android:text="Yellow"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pokergreen"
+                        android:textSize="15sp" />
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Pink_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/round_back_secondary_100"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="19dp"
+                        android:text="Pink"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pokergreen"
+                        android:textSize="15sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Grey_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/Pink_select"
+                        android:background="@drawable/round_back_secondary_100"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="19dp"
+                        android:text="Grey"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pokergreen"
+                        android:textSize="15sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/Grey_select"
+                        android:background="@drawable/round_back_secondary_100"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="19dp"
+                        android:text="Red"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pokergreen"
+                        android:textSize="15sp" />
 
 
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginEnd="20dp"
+                android:background="@drawable/round_back_white10_20"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="Choose Background Color"
+                    android:textColor="@color/white"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/green_back_selct"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/round_back_secondary_100"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="19dp"
+                        android:text="Green"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pokergreen"
+                        android:textSize="15sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/blue_back_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/green_back_selct"
+                        android:background="@drawable/round_back_secondary_100"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="19dp"
+                        android:text="Blue"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pokergreen"
+                        android:textSize="15sp" />
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/blue_back_select"
+                        android:background="@drawable/round_back_secondary_100"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="19dp"
+                        android:text="Yellow"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pokergreen"
+                        android:textSize="15sp" />
 
 
-        </RelativeLayout>
+                </RelativeLayout>
 
-        <RelativeLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp">
 
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Pink_back_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/round_back_secondary_100"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="19dp"
+                        android:text="Pink"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pokergreen"
+                        android:textSize="15sp" />
 
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/Grey_back_select"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/Pink_back_select"
+                        android:background="@drawable/round_back_secondary_100"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="19dp"
+                        android:text="Grey"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pokergreen"
+                        android:textSize="15sp" />
 
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-
-        </RelativeLayout>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/round_back_secondary_100"
-            android:text="Select"
-            android:textAllCaps="false"
-            android:paddingStart="20dp"
-            android:textColor="@color/avatar_none_background"
-            android:paddingEnd="19dp" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:background="@drawable/round_back_white10_20"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="40dp"
-        android:orientation="vertical"
-        android:padding="15dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Choose Shirt"
-            android:layout_gravity="center"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="18sp" />
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="25dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_toEndOf="@+id/Grey_back_select"
+                        android:background="@drawable/round_back_secondary_100"
+                        android:paddingStart="20dp"
+                        android:paddingEnd="19dp"
+                        android:text="Red"
+                        android:textAllCaps="false"
+                        android:textColor="@color/pokergreen"
+                        android:textSize="15sp" />
 
 
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
+                </RelativeLayout>
 
+            </LinearLayout>
+        </LinearLayout>
 
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-
-        </RelativeLayout>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/round_back_secondary_100"
-            android:text="Select"
-            android:textAllCaps="false"
-            android:paddingStart="20dp"
-            android:textColor="@color/avatar_none_background"
-            android:paddingEnd="19dp" />
-
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:background="@drawable/round_back_white10_20"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="20dp"
-        android:layout_marginEnd="20dp"
-        android:layout_marginTop="40dp"
-        android:orientation="vertical"
-        android:padding="15dp">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Choose Background"
-            android:layout_gravity="center"
-            android:textColor="@color/white"
-            android:textStyle="bold"
-            android:textSize="18sp" />
-
-
-        <RelativeLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-
-        </RelativeLayout>
-
-        <RelativeLayout
-            android:layout_marginTop="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-
-
-        </RelativeLayout>
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:layout_width="wrap_content"
-            android:layout_height="40dp"
-            android:layout_gravity="center"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/round_back_secondary_100"
-            android:text="Select"
-            android:textAllCaps="false"
-            android:paddingStart="20dp"
-            android:textColor="@color/back_background"
-            android:paddingEnd="19dp" />
-
-
-    </LinearLayout>
-
-
-
-
-
-
+    </ScrollView>
 
 
 </LinearLayout>

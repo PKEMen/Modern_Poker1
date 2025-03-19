@@ -76,7 +76,7 @@
                     android:layout_height="wrap_content"
                     android:text="Username"
                     android:textSize="12sp"
-                    android:textColor="@color/avatar_none_background"/>
+                    android:textColor="@color/white"/>
                 <EditText
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"

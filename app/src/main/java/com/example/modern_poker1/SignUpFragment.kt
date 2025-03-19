@@ -20,10 +20,13 @@ class SignUpFragment : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_sign_up, container, false)
 
-        val emailInput = view.findViewById<TextView>(R.id.usernameIn)
+        val usernameInput = view.findViewById<TextView>(R.id.usernameIn)
+        val emailInput = view.findViewById<TextView>(R.id.emailIn)
         val passwordInput = view.findViewById<TextView>(R.id.password_in)
         val registerButton = view.findViewById<AppCompatButton>(R.id.register_button)
         val signInText = view.findViewById<TextView>(R.id.signinText)
+
+
 
         registerButton.setOnClickListener {
             val email = emailInput.text.toString().trim()

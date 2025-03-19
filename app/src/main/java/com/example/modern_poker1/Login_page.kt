@@ -20,13 +20,15 @@ class Login_page : Fragment() {
         // Inflate the layout for this fragment
         val view = inflater.inflate(R.layout.fragment_login_page, container, false)
 
-        val emailInput = view.findViewById<TextView>(R.id.usernameIn)
+        val usernameInput = view.findViewById<TextView>(R.id.usernameIn)
         val passwordInput = view.findViewById<TextView>(R.id.password_in)
         val loginButton = view.findViewById<AppCompatButton>(R.id.login_button)
         val signUpText = view.findViewById<TextView>(R.id.signupText1)
 
+
+
         loginButton.setOnClickListener {
-            val email = emailInput.text.toString().trim()
+            val email = usernameInput.text.toString().trim()
             val password = passwordInput.text.toString().trim()
 
             if (email.isNotEmpty() && password.isNotEmpty()) {
