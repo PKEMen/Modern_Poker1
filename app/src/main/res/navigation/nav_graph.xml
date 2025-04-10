@@ -44,6 +44,9 @@
         <action
             android:id="@+id/action_mainScreenFragment_to_settings"
             app:destination="@id/settings" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_poker_UI"
+            app:destination="@id/poker_UI" />
     </fragment>
     <fragment
         android:id="@+id/settings"
@@ -71,4 +74,8 @@
             android:id="@+id/action_signUpFragment_to_avatarScreenFragment"
             app:destination="@id/avatarScreenFragment" />
     </fragment>
+    <activity
+        android:id="@+id/poker_UI"
+        android:name="com.example.modern_poker1.Poker_UI"
+        android:label="Poker_UI" />
 </navigation>

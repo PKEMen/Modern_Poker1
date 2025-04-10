@@ -30,6 +30,18 @@
             android:src="@drawable/man_user_circle_icon"
             android:padding="10dp"
             />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/PLAY2_button"
+            android:layout_marginTop="60dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/round_back_secondary_100"
+            android:text="Login"
+            android:textColor="@color/white"
+            android:textStyle="bold"/>
     </RelativeLayout>
 
 
@@ -46,6 +58,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"/>
+
 
     <Button
         android:id="@+id/play_button"

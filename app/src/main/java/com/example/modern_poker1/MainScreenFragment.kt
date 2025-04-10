@@ -5,6 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
+import androidx.appcompat.widget.AppCompatButton
 import androidx.fragment.app.Fragment
 import androidx.navigation.fragment.findNavController
 
@@ -33,5 +34,12 @@ class MainScreenFragment : Fragment() {
         avatarIcon.setOnClickListener {
             findNavController().navigate(R.id.action_mainScreenFragment_to_settings)
         }
+
+        val playButton = view.findViewById<AppCompatButton>(R.id.PLAY2_button)
+
+        playButton.setOnClickListener{
+            findNavController().navigate(R.id.action_mainScreenFragment_to_poker_UI)
+        }
+
     }
 }
