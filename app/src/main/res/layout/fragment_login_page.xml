@@ -9,12 +9,14 @@
     android:background="@color/pokergreen">
 
     <LinearLayout
+        android:layout_alignParentTop="true"
         android:layout_above="@+id/bottomBar"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_marginTop="50dp"
+        android:layout_height="0dp"
+        android:paddingTop="50dp"
         android:gravity="center"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:fitsSystemWindows="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -127,7 +129,7 @@
                     android:layout_height="wrap_content"
                     android:text="Password"
                     android:textSize="12sp"
-                    android:textColor="@color/avatar_none_background"/>
+                    android:textColor="@color/white"/>
                 <EditText
                     android:id="@+id/password_in"
                     android:layout_width="match_parent"
