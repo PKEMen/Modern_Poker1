@@ -47,6 +47,9 @@
         <action
             android:id="@+id/action_mainScreenFragment_to_poker_UI"
             app:destination="@id/poker_UI" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_ticTacToeFragment"
+            app:destination="@id/ticTacToeFragment" />
     </fragment>
     <fragment
         android:id="@+id/settings"
@@ -78,4 +81,15 @@
         android:id="@+id/poker_UI"
         android:name="com.example.modern_poker1.Poker_UI"
         android:label="Poker_UI" />
+    <fragment
+        android:id="@+id/ticTacToeFragment"
+        android:name="com.example.modern_poker1.TicTacToeFragment"
+        android:label="TicTacToeFragment" >
+        <action
+            android:id="@+id/action_ticTacToeFragment_to_settings"
+            app:destination="@id/settings" />
+        <action
+            android:id="@+id/action_ticTacToeFragment_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment" />
+    </fragment>
 </navigation>

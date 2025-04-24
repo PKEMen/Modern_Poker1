@@ -36,9 +36,13 @@ class MainScreenFragment : Fragment() {
         }
 
         val playButton = view.findViewById<AppCompatButton>(R.id.play_button)
+        val playTicTacToe = view.findViewById<AppCompatButton>(R.id.tictactoe_button)
 
         playButton.setOnClickListener{
             findNavController().navigate(R.id.action_mainScreenFragment_to_poker_UI)
+        }
+        playTicTacToe.setOnClickListener{
+            findNavController().navigate(R.id.action_mainScreenFragment_to_ticTacToeFragment)
         }
 
     }
