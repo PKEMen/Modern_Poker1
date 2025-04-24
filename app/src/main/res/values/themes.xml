@@ -2,6 +2,12 @@
     <!-- Base application theme. -->
     <style name="Base.Theme.Modern_Poker1" parent="Theme.Material3.DayNight.NoActionBar">
         <!-- Customize your light theme here. -->
+        <!-- ensure we draw a real status‐bar background -->
+        <item name="android:windowDrawsSystemBarBackgrounds">true</item>
+        <!-- give it a white color so your green never shows behind the icons -->
+        <item name="android:statusBarColor">@color/white</item>
+        <!-- make the status‐bar icons dark (so they’re visible on white) -->
+        <item name="android:windowLightStatusBar">true</item>
         <!-- <item name="colorPrimary">@color/my_light_primary</item> -->
     </style>
 
@@ -18,6 +24,8 @@
         <item name="colorSwitchThumbNormal">#FFFFFF</item>
         <item name="android:colorForeground">#99FFFFFF</item>
     </style>
+
+
 
     <style name="musicSwitch" parent="Theme.AppCompat.Light">
         <item name="colorControlActivated">#FFEB3B</item>

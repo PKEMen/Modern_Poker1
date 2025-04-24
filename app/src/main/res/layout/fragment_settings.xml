@@ -45,22 +45,24 @@
                 android:layout_marginTop="10dp"
                 android:src="@drawable/man_user_circle_icon"/>
             <TextView
+                android:id="@+id/settings_username"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:layout_marginTop="10dp"
-                android:text="@string/saved_username"
+                android:text="Username"
                 android:textColor="@color/white"
                 android:textSize="22sp"
                 android:textStyle="bold"/>
+
             <TextView
+                android:id="@+id/settings_email"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:text="@string/saved_email"
+                android:text="Email"
                 android:textColor="@color/dimwhite"
                 android:textSize="12sp"/>
-
 
             <androidx.appcompat.widget.AppCompatButton
                 android:id="@+id/edit_avatar_button"

@@ -6,19 +6,18 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/pokergreen"
-    android:orientation="horizontal">
+    android:orientation="vertical">
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <TextView
-            android:id="@id/welcome_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Main Menu"
             android:layout_centerInParent="true"
-            android:textColor="@color/white"
+            android:textColor="@color/gold"
             android:textStyle="bold"
             android:textSize="18sp" />
 
@@ -30,45 +29,28 @@
             android:src="@drawable/man_user_circle_icon"
             android:padding="10dp"
             />
-
-        <androidx.appcompat.widget.AppCompatButton
-            android:id="@+id/PLAY2_button"
-            android:layout_marginTop="60dp"
-            android:layout_width="match_parent"
-            android:layout_height="55dp"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:background="@drawable/round_back_secondary_100"
-            android:text="Login"
-            android:textColor="@color/white"
-            android:textStyle="bold"/>
     </RelativeLayout>
 
 
-
     <TextView
-        android:id="@+id/welcome_text"
+        android:id="@+id/tvWelcome"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome to Poker App!"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:textSize="20sp"
         android:textStyle="bold"
-        app:layout_constraintBottom_toTopOf="@id/play_button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"/>
 
-
+    <!-- Play Game Button -->
     <Button
         android:id="@+id/play_button"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="160dp"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:backgroundTint="@color/gold"
         android:text="Play Game"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/welcome_text" />
+        android:textColor="@color/pokergreen"
+        android:textStyle="bold"/>
 
 </LinearLayout>

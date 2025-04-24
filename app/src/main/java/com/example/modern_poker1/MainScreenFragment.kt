@@ -35,7 +35,7 @@ class MainScreenFragment : Fragment() {
             findNavController().navigate(R.id.action_mainScreenFragment_to_settings)
         }
 
-        val playButton = view.findViewById<AppCompatButton>(R.id.PLAY2_button)
+        val playButton = view.findViewById<AppCompatButton>(R.id.play_button)
 
         playButton.setOnClickListener{
             findNavController().navigate(R.id.action_mainScreenFragment_to_poker_UI)

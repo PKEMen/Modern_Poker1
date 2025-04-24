@@ -79,18 +79,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Username"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textSize="12sp" />
 
                     <EditText
+                        android:id="@+id/usernameInput"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="30dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginEnd="20dp"
-                        android:background="@android:color/transparent"
+                        android:background="@color/white"
                         android:inputType="text"
                         android:maxLines="1"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textSize="16sp" />
                 </LinearLayout>
 
@@ -99,7 +100,7 @@
                     android:layout_height="1dp"
                     android:layout_below="@id/usernameLayout"
                     android:layout_marginStart="40dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="20dp"
                     android:background="@color/white" />
             </RelativeLayout>
@@ -132,18 +133,19 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Email Address"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textSize="12sp" />
 
                     <EditText
+                        android:id="@+id/emailInput"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="30dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginEnd="20dp"
-                        android:background="@android:color/transparent"
+                        android:background="@color/white"
                         android:inputType="text"
                         android:maxLines="1"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textSize="16sp" />
                 </LinearLayout>
 
@@ -152,7 +154,7 @@
                     android:layout_height="1dp"
                     android:layout_below="@id/emailLayout"
                     android:layout_marginStart="40dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="20dp"
                     android:background="@color/white" />
             </RelativeLayout>
@@ -181,22 +183,23 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/password_in"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Password"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textSize="12sp" />
 
                     <EditText
-                        android:id="@+id/password_in"
+                        android:id="@+id/passwordInput"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="30dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginEnd="20dp"
-                        android:background="@android:color/transparent"
+                        android:background="@color/white"
                         android:inputType="textPassword"
                         android:maxLines="1"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textSize="16sp" />
                 </LinearLayout>
 
@@ -205,7 +208,7 @@
                     android:layout_height="1dp"
                     android:layout_below="@id/passwordLayout"
                     android:layout_marginStart="40dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="20dp"
                     android:background="@color/white" />
             </RelativeLayout>
@@ -234,22 +237,23 @@
                     android:orientation="vertical">
 
                     <TextView
+                        android:id="@+id/repassword_in"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:text="Re-Password"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textSize="12sp" />
 
                     <EditText
-                        android:id="@+id/repassword_in"
+                        android:id="@+id/repasswordInput"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
+                        android:layout_height="30dp"
                         android:layout_marginTop="5dp"
                         android:layout_marginEnd="20dp"
-                        android:background="@android:color/transparent"
+                        android:background="@color/white"
                         android:inputType="textPassword"
                         android:maxLines="1"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textSize="16sp" />
                 </LinearLayout>
 
@@ -258,7 +262,7 @@
                     android:layout_height="1dp"
                     android:layout_below="@id/repasswordLayout"
                     android:layout_marginStart="40dp"
-                    android:layout_marginTop="20dp"
+                    android:layout_marginTop="10dp"
                     android:layout_marginEnd="20dp"
                     android:background="@color/white" />
             </RelativeLayout>
